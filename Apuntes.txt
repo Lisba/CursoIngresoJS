@@ -1,0 +1,20 @@
+Miercoles 03/07/2019			Lisbaldy Ojeda
+Introducción a la Programación		Prof: Mario Octavio Villegas y Mauricio Cerizza
+
+Programar es recibir un dato, procesarlo y devolver información.
+Cuando declaro una variable sin asignar un valor se autoasigna el valor "UNDEFINED".
+Si se le asigno un valor a la variable y luego se le retiró la variable adquiere valor NULL.
+
+Buenas prácticas:
+
+-Siempre colocar el punto y coma ";".
+-Siempre declarar variables con lower camelCase.
+-Declarar primero las variables antes de hacer cualquier otra cosa.
+-Declarar las variables y asignarlas en otra línea (No hacerlo en la misma).
+
+Diferentes ventanas modal:
+-alert("mensaje").
+-prompt("mensaje de referencia", "valor por defecto"), si se introduce y acepta devuelve el valor introducido, si se cancela devuelve null.
+-confirm("mensaje"), es como alert pero con dos botones, si presiono aceptar devuelve el valor TRUE y si presiono cancelar devuelve "FALSE".
+
+console.dir() muestra en consola el directorio (todo lo inlcuido) del elemento que introduzca entre parentesis.
