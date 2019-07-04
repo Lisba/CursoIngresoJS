@@ -4,6 +4,10 @@
 */
 function mostrar()
 {
+	var nombrePrompt;
+	
+	nombrePrompt = prompt("Escribe tu nombre", "Lisbaldy");
+
+	document.getElementById('elNombre').value = nombrePrompt;
 
 }
-
