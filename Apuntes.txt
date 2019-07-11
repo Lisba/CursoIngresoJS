@@ -18,3 +18,14 @@ Diferentes ventanas modal:
 -confirm("mensaje"), es como alert pero con dos botones, si presiono aceptar devuelve el valor TRUE y si presiono cancelar devuelve "FALSE".
 
 console.dir() muestra en consola el directorio (todo lo inlcuido) del elemento que introduzca entre parentesis.
+
+Miercoles 10/07/2019			Lisbaldy Ojeda
+					Prof: Mario Octavio Villegas y Mauricio Cerizza
+
+Para convertir grados farenheit a celcius y viceversa:
+A Celcius: (ºF - 32) / 1.8
+A Farenheit: (ºC * 1.8) + 32
+
+Para generar un numero aleatorio se usa la formula: Math.Floor(Math.random() * (max - min)) + min;
+
+Nota: Si no coloco las llaves en el if se ejecutará solo la primera línea. (Pero es una mala práctica, NO HACER).

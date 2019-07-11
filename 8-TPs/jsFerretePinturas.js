@@ -6,7 +6,6 @@ function FahrenheitCentigrados ()
 {
     var temperaturaUser;
     var aCelcius;
-    
 
     temperaturaUser = document.getElementById('Temperatura').value;
     temperaturaUser = parseInt(temperaturaUser);
