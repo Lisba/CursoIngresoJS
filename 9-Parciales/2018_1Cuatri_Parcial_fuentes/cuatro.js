@@ -3,14 +3,45 @@ function mostrar()
 
     var numeroUno;
     var numeroDos;
-    var parsedNumeroUno;
-    var parsedNumeroDos;
-    var resta;
-    var suma;
+    var resultado;
 
     // Números ingresados en formato String.
     numeroUno = prompt("Escribe un número");
     numeroDos = prompt("Escribe otro número");
+
+    if (numeroUno == numeroDos)
+    {
+        resultado = numeroUno + numeroDos;
+
+    } else 
+    {
+
+        if (numeroUno > numeroDos)
+        {
+            resultado = numeroUno - numeroDos;
+
+        } else
+        {
+            numeroUno = parseInt(numeroUno);
+            numeroDos = parseInt(numeroDos);
+
+            resultado = numeroUno + numeroDos;
+
+            if (resultado > 10)
+            {
+                resultado = "La suma es " + resultado + " y superó al 10.";
+
+            }
+
+        }
+
+    }
+
+    alert(resultado);
+    
+    /* 
+
+    PRIMERA RESOLUCIÓN HECHA ANTES DE MEJORARLO:
 
     // Números ingresados en formato Number.
     parsedNumeroUno = parseInt(numeroUno);
@@ -37,5 +68,7 @@ function mostrar()
         alert(numeroUno + numeroDos);
 
     }
+
+    */
 
 }
