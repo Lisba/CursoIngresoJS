@@ -14,7 +14,10 @@ function CalcularPrecio ()
     var cantidad;
     var marca;
     var precioLampara;
+    var cuenta;
+    var cuentaDescuento;
     var precioFinal;
+    var impuesto;
 
     cantidad = document.getElementById("Cantidad").value;
     marca = document.getElementById("Marca").value;
@@ -22,38 +25,107 @@ function CalcularPrecio ()
 
     cantidad = parseInt(cantidad);
 
+    cuenta = precioLampara * cantidad;
+    cuentaDescuento = cuenta / 100;
+
     if (cantidad > 5)
     {
         
-        precioFinal = (precioLampara * cantidad) / 100 * 50;
+        precioFinal = cuenta - (cuentaDescuento * 50);
 
-        if (cantidad == 5)
+    } else
+    {
+
+    	if (cantidad == 5)
         {
+
             if (marca == "ArgentinaLuz")
             {
-                precioFinal = (precio * cantidad) / 100 * 40;
+
+                precioFinal = cuenta - (cuentaDescuento * 40);
 
             } else 
             {
-                precioFinal = (precio * cantidad) / 100 * 30;
+
+                precioFinal = cuenta - (cuentaDescuento * 30);
+            
             }
 
         } else 
         {
+
             if (cantidad == 4) 
             {
+
                 if (marca == "ArgentinaLuz" || marca == "FelipeLamparas")
                 {
-                    precioFinal = (precio * cantidad) / 100 * 25;
+
+                    precioFinal = cuenta - (cuentaDescuento * 25);
 
                 } else 
                 {
-                    precioFinal = (precio * cantidad) / 100 * 20;
+
+                    precioFinal = cuenta - (cuentaDescuento * 20);
 
                 }
                 
+            } else
+            {
+
+            	if (cantidad == 3) 
+            	{
+
+            		if (marca == "ArgentinaLuz")
+            		{
+
+            			precioFinal = cuenta - (cuentaDescuento * 15);
+
+            		} else
+            		{
+
+            			if (marca == "FelipeLamparas") 
+	            		{
+
+	            			precioFinal = cuenta - (cuentaDescuento * 10);
+
+	            		} else
+	            		{
+
+	            			precioFinal = cuenta - (cuentaDescuento * 5);
+
+	            		}
+
+            		}
+
+            	} else
+            	{
+
+            		if(cantidad == 2)
+            		{
+
+            			precioFinal = cuenta;
+
+            		} else 
+            		{
+
+            			precioFinal = precioLampara;
+
+            		}
+
+            	}
+
             }
+
         }
+
+    }
+
+    if (precioFinal >= 120)
+    {
+
+	    impuesto = precioFinal / 100 * 10;
+    	precioFinal = precioFinal + impuesto;
+    	alert("IIBB usted pagó " + impuesto);
 
     }
 
