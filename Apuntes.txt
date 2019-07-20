@@ -29,3 +29,14 @@ A Farenheit: (ºC * 1.8) + 32
 Para generar un numero aleatorio se usa la formula: Math.Floor(Math.random() * (max - min)) + min;
 
 Nota: Si no coloco las llaves en el if se ejecutará solo la primera línea. (Pero es una mala práctica, NO HACER).
+Valor de verdad: Una expresión que puede ser true o false.
+
+(numero > 0 && numero < 10) lo contrario es (!(numero > 0 && numero < 10))
+					    (numero < 0 || numero > 10)	     !&& y || son iguales en este caso
+
+Diferencia entre acumulador y contador:
+
+contador = contador + 1 : ES FIJO
+acumulador = acumulador + numero : ES VARIABLE
+
+While se usa para validar
