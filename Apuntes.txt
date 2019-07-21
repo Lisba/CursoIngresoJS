@@ -40,3 +40,25 @@ contador = contador + 1 : ES FIJO
 acumulador = acumulador + numero : ES VARIABLE
 
 While se usa para validar
+
+MAXIMO Y MINIMO:
+
+contador = contador + 1;
+
+if (contador == 1)
+{
+	maximo = numero;
+	minimo = numero;
+
+} else
+{
+	if(numero < minimo)
+	{
+		minimo = numero;
+	}
+
+	if(numero > maximo)
+	{
+		maximo = numero;
+	}
+}
