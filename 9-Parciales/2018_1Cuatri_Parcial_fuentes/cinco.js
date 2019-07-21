@@ -2,17 +2,18 @@ function mostrar()
 {
 
     var planetaIngresado;
+    var txt;
 
     planetaIngresado = prompt("Escribe un planeta en minúsculas");
 
     switch (planetaIngresado)
     {
         case "tierra":
-            alert("Acá vivimos.");
+            txt = "Acá vivimos.";
             break;
         case "mercurio":
         case "venus":
-            alert("Acá hace mas calor.");
+            txt = "Acá hace mas calor.";
             break;
         case "marte":
         case "jupiter":
@@ -20,11 +21,12 @@ function mostrar()
         case "uranio":
         case "neptuno":
         case "pluton":
-            alert("Acá hace mas frío.");
+            txt = "Acá hace mas frío.";
             break;
         default:
-            alert("Este no es un planeta válido!!")
+            txt = "Este no es un planeta válido!!";
             break;
     }
 
+    alert(txt);
 }
