@@ -1,18 +1,15 @@
 function mostrar()
 {
-
 	var contador=0;
-	//declarar contadores y variables 
+	// declarar variables
 	
-	var respuesta="si";
+	var respuesta='si';
 
-	while(respuesta!="no")
+	while(respuesta!='no')
 	{
 		
 	
 	}
-
-
 
 
 }//FIN DE LA FUNCIÓN
