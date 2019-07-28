@@ -62,3 +62,17 @@ if (contador == 1)
 		maximo = numero;
 	}
 }
+
+// var numero;
+// var numeroDos;
+// var suma;
+
+// numeroDos = 33;//false
+// numeroDos = "33";//false
+// numeroDos = "lalala"//true
+// suma = isNaN(numeroDos);
+
+ // if(isNaN(numero) || numero > 10)
+// {
+
+ // }
