@@ -1,5 +1,5 @@
 Miercoles 03/07/2019			Lisbaldy Ojeda
-Introducción a la Programación		Prof: Mario Octavio Villegas y Mauricio Cerizza
+Introducción a la Programación		Prof: Mario Octavio Villegas y Mauricio Cerizza y Maria Cardoso
 
 Programar es recibir un dato, procesarlo y devolver información.
 Cuando declaro una variable sin asignar un valor se autoasigna el valor "UNDEFINED".
@@ -76,3 +76,7 @@ if (contador == 1)
 // {
 
  // }
+
+31/07/2019
+
+Flag son estados, true o false / 1 o 0 / "s" o "n".
