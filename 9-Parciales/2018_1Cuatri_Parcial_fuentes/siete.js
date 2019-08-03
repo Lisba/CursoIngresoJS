@@ -7,7 +7,7 @@ function mostrar()
     var minimo;
     var sexoNotaMinima;
     var contadorSexoVaronNotaMasSeis = 0;
-    var promedioNotas = acumuladorNotas/contador;
+    var promedioNotas;
    
     do
     {
@@ -49,6 +49,9 @@ function mostrar()
         {
             contadorSexoVaronNotaMasSeis ++;
         }
+
+        //Calcula promedio de notas:
+        promedioNotas = acumuladorNotas/contador;
 
     } while(contador < 5)
 
