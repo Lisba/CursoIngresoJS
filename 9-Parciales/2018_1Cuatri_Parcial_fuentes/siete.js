@@ -1,14 +1,59 @@
 function mostrar()
 {
-    // var numero;
+    var nota;
+    var sexo;
+    var contador = 0;
+    var acumuladorNotas = 0;
+    var minimo;
+    var sexoNotaMinima;
+    var contadorSexoVaronNotaMasSeis = 0;
+    var promedioNotas = acumuladorNotas/contador;
+   
+    do
+    {
+        //Pide nota y valida:
+        do
+        {
+            nota = prompt("Ingresa la nota:");
+            nota = parseInt(nota);
 
-    // numero = prompt("Ingresa un número!");
+        } while(nota < 0 || nota > 10)
 
-    // while( isNaN(numero) )
-    // {
-    //     numero = prompt("EROOOR, intenta ingresar un número de nuevo!");
-    // }
+        //Pide sexo y valida:
+        do
+        {
+            sexo = prompt("Ingresa el sexo: f/m");
 
-    // alert("Bien!! Ingresaste un número");
+        } while(sexo != "f" && sexo != "m")
+
+        //Calcula la cantidad de iteraciones:
+        contador++;
+
+        //Calcula el promedio de las notas:
+        acumuladorNotas += nota;
+
+        //Calcula la nota mínima:
+        if(contador == 1)
+        {
+            minimo = nota;
+            sexoNotaMinima = sexo;
+
+        } else if (nota < minimo)
+        {   
+                minimo = nota;
+                sexoNotaMinima = sexo;
+        }
+
+        //Calcula la cantidad de varones con notas mayores a seis (6):
+        if(sexo == "m" && nota >= 6)
+        {
+            contadorSexoVaronNotaMasSeis ++;
+        }
+
+    } while(contador < 5)
+
+    alert("El promedio de las notas totales es: " + promedioNotas + "."); //a
+    alert("La nota mínima es: " + minimo + " y el sexo de esa persona es: " + sexoNotaMinima + "."); //b
+    alert("La cantidad de varones con notas superiores ó iguales a seis (6) es: " + contadorSexoVaronNotaMasSeis + "."); //c
 
 }
