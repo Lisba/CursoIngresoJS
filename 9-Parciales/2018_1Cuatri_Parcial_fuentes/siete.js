@@ -17,7 +17,7 @@ function mostrar()
             nota = prompt("Ingresa la nota:");
             nota = parseInt(nota);
 
-        } while(nota < 0 || nota > 10)
+        } while(isNaN(nota) || nota < 0 || nota > 10)
 
         //Pide sexo y valida:
         do
@@ -44,7 +44,7 @@ function mostrar()
                 sexoNotaMinima = sexo;
         }
 
-        //Calcula la cantidad de varones con notas mayores a seis (6):
+        //Calcula la cantidad de varones con notas mayores o iguales a seis (6):
         if(sexo == "m" && nota >= 6)
         {
             contadorSexoVaronNotaMasSeis ++;

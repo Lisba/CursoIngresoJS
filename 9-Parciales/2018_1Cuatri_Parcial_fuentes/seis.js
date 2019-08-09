@@ -36,17 +36,18 @@ function mostrar()
         case "4":
         case "5":
 
-             txt = "Es de noche.";
+            txt = "Es de noche.";
 
-             if(laHora >= 20 && laHora < 24)
+            if(laHora >= 20 && laHora < 24)
             {
                 txt += " A dormir";
             }
 
-             break;
+            break;
 
-         default:
+        default:
             txt = "No es una hora válida.";
+            break;
     }
 
     alert(txt);

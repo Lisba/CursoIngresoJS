@@ -79,4 +79,5 @@ if (contador == 1)
 
 31/07/2019
 
-Flag son estados, true o false / 1 o 0 / "s" o "n".
+Flag son estados, true o false / 1 o 0 / "s" o "n" que se usan para hacer una tarea segun el estado actual de la bandera,
+ejemplo: si flag=true entonces {pedir edad}, si flag=false entonces {no pedir edad}.

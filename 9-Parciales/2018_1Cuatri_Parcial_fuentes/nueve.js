@@ -55,6 +55,7 @@ function mostrar()
         {
             maximo = peso;
             minimo = peso;
+            marcaProductoMasPesado = marca;
         
         }else
         {
